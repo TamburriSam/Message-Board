@@ -7,7 +7,7 @@ const messages = [
 ];
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Mini message board", messages: messages });
+  res.render("index", { title: "Recines message board", messages: messages });
 });
 
 router.get("/new", function (req, res) {
