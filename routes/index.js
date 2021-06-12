@@ -2,12 +2,12 @@ var express = require("express");
 var router = express.Router();
 
 const messages = [
-  { text: "hi there", user: "Amando", added: new Date() },
-  { text: "hello world", user: "Charles", added: new Date() },
+  { text: "hi there", user: "Dirk", added: new Date() },
+  { text: "hello world", user: "Sam", added: new Date() },
 ];
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Recines message board", messages: messages });
+  res.render("index", { title: "Mini message board", messages: messages });
 });
 
 router.get("/new", function (req, res) {
